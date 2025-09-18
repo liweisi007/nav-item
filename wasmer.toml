@@ -1,0 +1,25 @@
+[package]
+name = "nav-item"
+version = "1.0.0"
+description = "Vue3 + Node.js + SQLite 导航站"
+license = "MIT"
+
+[dependencies]
+nodejs = "*"
+
+[command]
+# 构建前端
+build = "cd web && npm install && npm run build"
+# 启动 Node.js 后端
+start = "npm install && node app.js"
+
+[env]
+# 默认端口（Wasmer 会注入 PORT 变量）
+PORT = "8080"
+
+[fs]
+# 挂载数据库和上传目录，确保持久化（根据需要调整路径）
+mounts = [
+  { from = "./database", to = "/data" },
+  { from = "./uploads", to = "/uploads" }
+]
