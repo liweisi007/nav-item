@@ -163,6 +163,15 @@ eooce/nav-item
 ghcr.io/eooce/nav-item:latest
 ```
 
+## serv00|ct8|Hostuno 一键安装脚本
+- 环境变量,放在脚本前，随脚本一起运行，英文空隔隔开
+- 后台管理用户名和密码默认分别为为`admin`和`123456`
+  * `DOMAIN`为自定义站点域名
+
+```bash
+bash <(curl -Ls https://github.com/eooce/nav-item/releases/download/ct8-and-serv00/install.sh) 
+```
+
 ## 🤝 贡献指南
 
 1. Fork 本仓库
@@ -186,4 +195,9 @@ ghcr.io/eooce/nav-item:latest
 ---
 
 ⭐ 如果这个项目对你有帮助，请给它一个星标！ 
+
+
+
+
+
 
